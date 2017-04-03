@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>The art of quality maintenance</title>
+
+		<meta name="description" content="The art of quality maintenance">
+		<meta name="author" content="Maciej Mensfeld">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css" id="theme">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+        <section>
+          <h1>The art of quality maintenance</h1>
+        </section>
+
+        <section>
+          <img src="img/logo_gray.svg" style="border: none; box-shadow: 0 0 0 0 #fff; width: 50%"/>
+          <h2>Keep track, stay sharp</h2>
+        </section>
+
+        <section>
+          <h2>$ whoami</h2>
+
+          <p>
+            <a href="http://mensfeld.pl">Maciej Mensfeld</a>
+          </p>
+
+          <p>
+            <ul style="list-style: none; text-align: center;">
+              <li>
+                Software Engineer (10 years with Ruby)
+              </li>
+              <li>
+                <a href="https://github.com/karafka/karafka">Karafka</a> creator
+              </li>
+              <li>
+                Founder of <a href="https://coditsu.io">Coditsu</a> - a comprehensive platform for insightful code analysis
+              </li>
+            </ul>
+          </p>
+        </section>
+
+        <section>
+          <h2>$ whoami</h2>
+
+          <p>
+            www: <a href="https://coditsu.io">coditsu.io</a> <br>
+            www: <a href="http://mensfeld.pl">mensfeld.pl</a> <br>
+            twitter: <a href="http://twitter.com/maciejmensfeld">@maciejmensfeld</a> <br>
+            e-mail: <a href="mailto:maciej@coditsu.io">maciej@coditsu.io</a>
+          </p>
+        </section>
+
+        <section>
+          <h2>Please notify me if...</h2>
+
+          <ul>
+            <li>
+              I speak 2 fast
+            </li>
+            <li>
+              I should repeat anything
+            </li>
+            <li>
+              I should explain something better
+            </li>
+            <li>
+              You have any questions
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Agenda</h2>
+
+          <ul>
+            <li>What is <strike>code</strike> quality?</li>
+            <li>Do we even care?</li>
+            <li>Making things better?</li>
+            <li>What if we fail?</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>What is code quality?</h2>
+        </section>
+
+        <section>
+          <h2>What is <strike>code</strike> quality?</h2>
+
+          <h4>Everyone speaks about it</h4>
+        </section>
+
+        <section>
+          <h2>What is <strike>code</strike> quality?</h2>
+
+          <h4>Everyone wants to <strike>make</strike> have it</h4>
+        </section>
+
+        <section>
+          <h2>What is <strike>code</strike> quality?</h2>
+
+          <h4>But do people even think about it's nature?</h4>
+        </section>
+
+        <section>
+          <img src="img/zen.jpg" style="border: none; box-shadow: 0 0 0 0 #fff; width: 25%"/>
+          <h4>Zen and the Art of Motorcycle Maintenance</h4>
+          <h5>Robert M. Pirsig</h5>
+        </section>
+
+        <section>
+          <blockquote>
+            Care and Quality are internal and external aspects of the same thing. A person who sees Quality and feels it as he works is a person who cares.A person who cares about what he sees and does is a person who’s bound to have some characteristic of quality.
+          </blockquote>
+          <h5>Robert M. Pirsig</h5>
+        </section>
+
+        <section>
+          <h2>Caring is the first step</h2>
+          <h3>So, do we as an industry care?</h3>
+        </section>
+
+        <section>
+          <img src="img/rubocop.png" style="border: none; box-shadow: 0 0 0 0 #fff; width: 70%"/>
+        </section>
+
+        <section>
+          <img src="img/rubocop.png" style="border: none; box-shadow: 0 0 0 0 #fff; width: 70%"/>
+          <h4>We don't :(</h4>
+        </section>
+
+        <section>
+          <img src="img/rubocop.png" style="border: none; box-shadow: 0 0 0 0 #fff; width: 70%"/>
+          <h4>We don't :(</h4>
+
+          <p>
+            <small>
+            AccessorMethodName  ActionFilter   Alias   ArrayJoin   AsciiComments   AsciiIdentifiers   Attr   BlockNesting   CaseEquality   CharacterLiteral   ClassAndModuleChildren   ClassLength   ClassVars   ColonMethodCall   CommentAnnotation   CyclomaticComplexity   Delegate   DeprecatedHashMethods   Documentation   DoubleNegation   EachWithObject   EmptyLiteral   Encoding   EvenOdd   FileName   FlipFlop SpecialGlobalVars   StringLiterals   VariableInterpolation   TrailingCommaInLiteral
+            </small>
+          </p>
+        </section>
+
+        <section>
+          <img src="img/rubocop.png" style="border: none; box-shadow: 0 0 0 0 #fff; width: 70%"/>
+          <h4>We don't :(</h4>
+
+          <p>
+            <small>
+              FormatString   GlobalVars   GuardClause   IfUnlessModifier   IfWithSemicolon   InlineComment   Lambda   LambdaCall   LineEndConcatenation   MethodLength   ModuleFunction   NegatedIf   NegatedWhile   Next   NilComparison   Not   NumericLiterals   OneLineConditional   OpMethod   ParameterLists   PercentLiteralDelimiters   PerlBackrefs   Proc   RaiseArgs   RegexpLiteral   SelfAssignment SingleLineBlockParams   SingleLineMethods   SignalException
+            </small>
+          </p>
+        </section>
+
+        <section>
+          <img src="img/rubocop.png" style="border: none; box-shadow: 0 0 0 0 #fff; width: 70%"/>
+          <h4>We don't :(</h4>
+
+          <p>
+            <small>
+              TrailingCommaInArguments   TrivialAccessors   VariableInterpolation   WhenThen   WhileUntilModifier   WordArray   AmbiguousOperator   AmbiguousRegexpLiteral   AssignmentInCondition   ConditionPosition   DeprecatedClassMethods   ElseLayout   HandleExceptions   InvalidCharacterLiteral   LiteralInCondition   LiteralInInterpolation   Loop   ParenthesesAsGroupedExpression   RequireParentheses   UnderscorePrefixedVariableName   Void
+            </small>
+          </p>
+        </section>
+
+        <section>
+          <blockquote>
+            One thing about pioneers that you don’t hear mentioned is that they are invariably, by their nature, mess-makers.
+          </blockquote>
+          <h5>Robert M. Pirsig</h5>
+        </section>
+
+        <section>
+          <blockquote>
+            When you want to hurry something, that means you no longer care about it and want to get on to other things.
+          </blockquote>
+          <h5>Robert M. Pirsig</h5>
+        </section>
+
+        <section>
+          <blockquote>
+            Caring about what you are doing is considered either unimportant or taken for granted.
+          </blockquote>
+          <h5>Robert M. Pirsig</h5>
+        </section>
+
+        <section>
+          <h3>But it's not that simple</h3>
+          <h4>Unfortunately :(</h4>
+        </section>
+
+        <section>
+          <h3>Is it hard?</h3>
+          <blockquote>
+            Not if you have the right attitudes. It's having the right attitude that's hard.
+          </blockquote>
+
+          <h5>
+            Robert M. Pirsig
+          </h5>
+        </section>
+
+        <section>
+          <h2>Making things better</h2>
+        </section>
+
+        <section>
+          <blockquote>
+            The solutions all are simple - after you have arrived at them. But they're simple only when you know already what they are.
+          </blockquote>
+
+          <h5>
+            Robert M. Pirsig
+          </h5>
+        </section>
+
+        <section>
+          <h3>Making things better</h3>
+
+          <ul>
+            <li>Caring</li>
+            <li>Attitude</li>
+            <li>Standards</li>
+            <li>Procedures</li>
+            <li>Common sense</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>And the most important one</h3>
+          <h1>Insights</h1>
+        </section>
+
+        <section>
+          <img src="img/logo_gray.svg" style="border: none; box-shadow: 0 0 0 0 #fff; width: 50%"/>
+        </section>
+
+        <section>
+          <h3>Familiarity can blind you</h3>
+
+          <h5>
+            Robert M. Pirsig
+          </h5>
+        </section>
+
+        <section>
+          <h3>Longest living problem?</h3>
+
+          <img src="img/rr.png" style="border: none; box-shadow: 0 0 0 0 #fff; width: 100%"/>
+        </section>
+
+        <section>
+          <h3>Anomalies?</h3>
+
+          <img src="img/distr.png" style="border: none; box-shadow: 0 0 0 0 #fff; width: 100%"/>
+        </section>
+
+
+        <section>
+          <h3>Different perspectives?</h3>
+          <img src="img/rubocop_res.png" style="border: none; box-shadow: 0 0 0 0 #fff; width: 80%"/>
+        </section>
+
+        <section>
+          <h1>Projects aren't everything</h1>
+        </section>
+
+        <section>
+          <h3>Authors</h3>
+          <img src="img/persp.png" style="border: none; box-shadow: 0 0 0 0 #fff; width: 100%"/>
+        </section>
+
+        <section>
+          <h3>Authors</h3>
+          <img src="img/per2.png" style="border: none; box-shadow: 0 0 0 0 #fff; width: 100%"/>
+        </section>
+
+        <section>
+          <h3>Offenses? Bad? Good?</h3>
+          <img src="img/off1.png" style="border: none; box-shadow: 0 0 0 0 #fff; width: 100%"/>
+        </section>
+
+        <section>
+          <h3>Who knows without <u>context</u></h3>
+          <img src="img/off2.png" style="border: none; box-shadow: 0 0 0 0 #fff; width: 100%"/>
+        </section>
+
+        <section>
+          <h3>What would happen if we give them <u>context</u></h3>
+        </section>
+
+        <section>
+          <blockquote>
+            He’d no longer be a grade-motivated person. He’d be a knowledge-motivated person.
+          </blockquote>
+
+          <h5>
+            Robert M. Pirsig
+          </h5>
+        </section>
+
+        <section>
+          <h1>What if we fail?</h1>
+        </section>
+
+        <section>
+          <h1>Goverment will do that for us :(</h1>
+        </section>
+
+        <section>
+          <h1>THE END - Q &amp; A</h1>
+        </section>
+      </div>
+
+		  <div class='logo'>
+        <img src="img/logo_gray.svg" style="background: none; border: none; box-shadow: 0 0 0 0 #fff;"/>
+		  </div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
