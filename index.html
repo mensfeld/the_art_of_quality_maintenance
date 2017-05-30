@@ -39,13 +39,13 @@
           <p>
             <ul style="list-style: none; text-align: center;">
               <li>
-                Software Engineer (10 years with Ruby)
+                Software Engineer (11 years with Ruby)
               </li>
               <li>
                 <a href="https://github.com/karafka/karafka">Karafka</a> framework (Ruby + Kafka) creator
               </li>
               <li>
-                Founder of <a href="https://coditsu.io">Coditsu</a> - a comprehensive platform for insightful code analysis
+                Founder of <a href="https://coditsu.io">Coditsu</a> - we make your code better by making you understand it
               </li>
             </ul>
           </p>
@@ -220,6 +220,21 @@
             <li class="fragment">Size</li>
             <li class="fragment">Structure</li>
             <li class="fragment">Patterns</li>
+            <li class="fragment">Code smells</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Something's not right, when you have:</h3>
+
+          <ul>
+            <li class="fragment">Unnecessary complexity</li>
+            <li class="fragment">Useless/misleading comments</li>
+            <li class="fragment">Long classes</li>
+            <li class="fragment">Poor naming</li>
+            <li class="fragment">Code that’s not used</li>
+            <li class="fragment">Design Pattern overuse</li>
+            <li class="fragment">Tight coupling</li>
           </ul>
         </section>
 
@@ -267,6 +282,7 @@
           <h2>Size</h2>
 
           <h4>How small is small?</h4>
+          <h5>LOC is a really, really wrong metric</h5>
         </section>
 
         <section>
@@ -327,6 +343,15 @@
         </section>
 
         <section>
+          <h2>Don't rush things</h2>
+          <blockquote>
+            Act in haste and repent at leisure: Code too soon and debug forever
+          </blockquote>
+
+          <h5>Raymond Kennington</h5>
+        </section>
+
+        <section>
           <h2>Raise awareness of quality</h2>
           <blockquote>
             Caring about what you are doing is considered either unimportant or taken for granted.
@@ -334,8 +359,64 @@
           <h5>Robert M. Pirsig</h5>
         </section>
 
+
+
         <section>
           <img src="img/automate.jpg" style="border: none; box-shadow: 0 0 0 0 #fff; width: 50%"/>
+        </section>
+
+        <section>
+          <h2>Keep an eye on it</h2>
+
+          <ul>
+            <li>Indicates code that needs refactoring</li>
+            <li>Indicates code that needs redesign</li>
+            <li>VACUUM frequently</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Keep an eye on it</h2>
+
+          <ul>
+            <li>Start early</li>
+            <li>Don't compromise</li>
+            <li>Always schedule time for quality maintenance</li>
+            <li>Take collective ownership</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Documentation</h2>
+
+          <ul>
+            <li>Do it!</li>
+            <li>Use a single standard for a given language / technology.</li>
+            <li>Say why instead of how.</li>
+            <li>If you copy and paste, check if comments are still relevant.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Documentation</h2>
+
+          <ul>
+            <li>Document unique, special, or unexpected conditions.</li>
+            <li>Keep an eye for stale comments.</li>
+            <li>Justify violation of good programming practices.</li>
+            <li>If everyone stumbles on a particular problem, fix it!</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Fail fast</h2>
+
+          <ul>
+            <li>Raise exceptions so they’re in your face.</li>
+            <li>Don't ignore or hide them.</li>
+            <li>If it is hard to track problems in development, imagine doing that in production.</li>
+            <li>Don't modify exception stack (or type).</li>
+          </ul>
         </section>
 
         <section>
@@ -345,6 +426,21 @@
           <h4>Don't fix it, if it does not require any changes.</h4>
           <h4>Perform code review.</h4>
         </section>
+
+        <section>
+          <h2>C.R.A.P metrics (Change Risk Analysis and Prediction)</h2>
+
+          <blockquote>
+            CRAP(m) = comp(m)^2 * (1-cov(m)/100)^3 + comp(m)
+          </blockquote>
+        </section>
+
+        <section>
+          <h2>C.R.A.P metrics (Change Risk Analysis and Prediction)</h2>
+
+          <img src="img/crap.png">
+        </section>
+
 
         <section>
           <h2>The best code is no code</h2>
@@ -405,7 +501,6 @@
           <h3>We need to be able to prove that we know what we are doing.</h3>
         </section>
 
-
         <section>
           <img src="img/logo_gray.svg" style="border: none; box-shadow: 0 0 0 0 #fff; width: 50%"/>
           <h2>Keep track, stay sharp</h2>
@@ -424,6 +519,19 @@
           <h1>Extras</h1>
 
           <ul>
+            <li>Untested code == unfinished code</li>
+            <li>Expose metrics and stats</li>
+            <li>Don’t tolerate anyone trashing your code</li>
+            <li>Use tools to check code quality.</li>
+            <li>Do it constantly.</li>
+            <li>Do it even when code does not change.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Extras</h1>
+
+          <ul>
             <li>Don't ignore warnings.</li>
             <li>Warnings may hide bigger problems.</li>
             <li>Always justify supressions.</li>
@@ -431,6 +539,17 @@
             <li>Postpone generalization.</li>
             <li>Don't overthink.</li>
             <li>Less code, less problems</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Extras</h1>
+
+          <ul>
+            <li>Don't make your senior developers code.</li>
+            <li>Make them teach a bit (if they want to).</li>
+            <li>Rotate responsibilities.</li>
+            <li>Challenge your programmers.</li>
           </ul>
         </section>
       </div>
